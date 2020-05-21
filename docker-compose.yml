@@ -1,0 +1,12 @@
+version: '3'
+services:
+    tshock:
+        image: terraria
+        ports: 
+            - 7777:7777
+        volumes: 
+            - worlds:/tshock/worlds
+            - config:/thsock/tshock
+volumes: 
+    worlds:
+    config:
